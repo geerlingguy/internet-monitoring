@@ -1,0 +1,11 @@
+route:
+    receiver: 'slack'
+    repeat_interval: 1m
+
+receivers:
+    - name: 'slack'
+      slack_configs:
+          - send_resolved: true
+            username: 'vegasbrianc'
+            channel: '#notifications'
+            api_url: 'https://hooks.slack.com/services/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'
