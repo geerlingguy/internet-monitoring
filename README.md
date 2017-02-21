@@ -12,9 +12,11 @@ If you would like to change which targets should be monitored or make configurat
 ## Configuration
 In order to pull GitHub stats consistently it is recommended you create a personal access token inside of GitHub. This token will allow you to query the GitHub API more frequently than a public user. [Create GitHub Token](https://github.com/settings/tokens). 
 
-
+<img src="https://github.com/vegasbrianc/github-monitoring/blob/master/images/github_token.png" width="400" heighth="400">
 
 Copy the GitHub Token you created and paste into the bottom of the [docker-compose.yml](https://github.com/vegasbrianc/github-monitoring/blob/master/docker-compose.yml) file under the metrics service section replacing the `GITHUB_TOKEN` with your newly created token.
+
+The REPOS variable can also be updated to point to the Repos that you wish to monitor. In my example I monitor freeCodeCamp and Docker.
 
      metrics:
       tty: true
@@ -28,9 +30,6 @@ Copy the GitHub Token you created and paste into the bottom of the [docker-compo
       networks:
         - back-tier
 
-
-## Insert Enviornment settings screenshot for repo names
-## Insert GitHub API steps + Screenshot 
 
 Once configurations are done let's start it up. From the /prometheus project directory run the following command:
 
@@ -50,7 +49,7 @@ Now we need to create the Prometheus Datasource in order to connect Grafana to P
 * Click `Data Sources`
 * Click the green button `Add Data Source`.
 
-<img src="https://github.com/vegasbrianc/github-monitoring/blob/version-2/images/Add_Data_Source.png" width="400" heighth="400">
+<img src="https://github.com/vegasbrianc/github-monitoring/blob/master/images/Add_Data_Source.png" width="400" heighth="400">
 
 ## Alerting
 Alerting has been added to the stack with Slack integration. 2 Alerts have been added and are managed 
@@ -82,9 +81,8 @@ I created a Dashboard template which is available on [GitHub Stats Dashboard](ht
 
 This dashboard is intended to help you get started with graphing your GitHub Repos. If you have any changes you would like to see in the Dashboard let me know so I can update Grafana site as well.
 
-Here's the Dashboard Template
 
-##TODO add Screenshot
+<img src="https://github.com/vegasbrianc/github-monitoring/blob/master/images/dashboard.png" width="400" heighth="400">
 
 ## Troubleshooting
 It appears some people have reported no data appearing in Grafana. If this is happening to you be sure to check the time range being queried within Grafana to ensure it is using Today's date with current time.
