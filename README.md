@@ -1,10 +1,10 @@
 # A Docker Stack which Monitors your GitHub Repos
 Here's a quick start to stand-up a Docker [Prometheus](http://prometheus.io/) stack containing Prometheus, Grafana and  [github-exporter](https://github.com/infinityworksltd/github-exporter) to collect and graph GitHub statistics.
 
-##Pre-requisites
+## Pre-requisites
 Before we get started installing the Prometheus stack. Ensure you install the latest version of docker and [docker-compose](https://docs.docker.com/compose/install/) on your Docker host machine. This has also been tested with Docker for Mac and it works well.
 
-##Installation
+## Installation
 Clone the project to your Docker host. 
 
 If you would like to change which targets should be monitored or make configuration changes edit the [/prom/prometheus.yml](https://github.com/vegasbrianc/prometheus/blob/version-2/prometheus/prometheus.yml) file. The targets section is where you define what should be monitored by Prometheus. The names defined in this file are actually sourced from the service name in the docker-compose file. If you wish to change names of the services you can add the "container_name" parameter in the `docker-compose.yml` file. 
@@ -49,7 +49,7 @@ Now we need to create the Prometheus Datasource in order to connect Grafana to P
 * Click `Data Sources`
 * Click the green button `Add Data Source`.
 
-<center><img src="https://github.com/vegasbrianc/github-monitoring/blob/master/images/Add_Data_Source.png" width="400" heighth="400"></center>
+<center><img src="https://github.com/vegasbrianc/github-monitoring/blob/master/images/Grafana_Add_Data_Source.png" width="400" heighth="400"></center>
 
 ## Install Dashboard
 I created a Dashboard template which is available on [GitHub Stats Dashboard](https://grafana.net/dashboards/1559). Simply download the dashboard and select from the Grafana menu -> Dashboards -> Import
