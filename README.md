@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vegasbrianc/github-monitoring.svg?branch=master)](https://travis-ci.org/vegasbrianc/github-monitoring)
+
 # A Docker Stack which Monitors your GitHub Repos
 Here's a quick start to stand-up a Docker [Prometheus](http://prometheus.io/) stack containing Prometheus, Grafana and  [github-exporter](https://github.com/infinityworksltd/github-exporter) to collect and graph GitHub statistics.
 
