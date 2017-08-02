@@ -1,0 +1,15 @@
+ sudo: required
+  2
+  3 services:
+  4     - docker
+  5
+  6 language: bash
+  7
+  8 before_script:
+  9     - docker-compose pull
+ 10     - docker-compose up -d
+ 11     - docker ps
+ 12
+ 13 script:
+ 14     - while ! curl --retry 10 --retry-delay 5 -v http://0.0.0.0:9090 >/dev/null; do sleep 1; done
+ 16     - while ! curl --retry 10 --retry-delay 5 -v http://0.0.0.0:3000 >/dev/null; do sleep 1; done
