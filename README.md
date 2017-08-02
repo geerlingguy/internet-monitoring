@@ -7,7 +7,7 @@ Before we get started installing the Prometheus stack. Ensure you install the la
 ## Installation
 Clone the project to your Docker host. 
 
-If you would like to change which targets should be monitored or make configuration changes edit the [/prom/prometheus.yml](https://github.com/vegasbrianc/prometheus/blob/version-2/prometheus/prometheus.yml) file. The targets section is where you define what should be monitored by Prometheus. The names defined in this file are actually sourced from the service name in the docker-compose file. If you wish to change names of the services you can add the "container_name" parameter in the `docker-compose.yml` file. 
+If you would like to change which targets should be monitored or make configuration changes edit the [/prometheus/prometheus.yml](https://github.com/vegasbrianc/prometheus/blob/version-2/prometheus/prometheus.yml) file. The targets section is where you define what should be monitored by Prometheus. The names defined in this file are actually sourced from the service name in the docker-compose file. If you wish to change names of the services you can add the "container_name" parameter in the `docker-compose.yml` file. 
 
 ## Configuration
 In order to pull GitHub stats consistently it is recommended you create a personal access token inside of GitHub. This token will allow you to query the GitHub API more frequently than a public user. [Create GitHub Token](https://github.com/settings/tokens). It is only necessary to give the repo scope to the token permission.
