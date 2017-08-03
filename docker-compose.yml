@@ -48,9 +48,11 @@ services:
     stdin_open: true
     expose:
       - 9171
+    ports:
+      - 9171:9171
     image: infinityworks/github-exporter:latest 
     environment:
-       - REPOS=freeCodeCamp/freeCodeCamp,docker/docker
-       - GITHUB_TOKEN=<GitHub API Token see README>
+      - REPOS=freeCodeCamp/freeCodeCamp,docker/docker
+      - GITHUB_TOKEN=<GitHub API Token see README>
     networks:
       - back-tier
