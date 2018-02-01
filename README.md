@@ -27,7 +27,7 @@ The REPOS variable can also be updated to point to the Repos that you wish to mo
         - 9171
       image: infinityworks/github-exporter:latest 
       environment:
-        - REPOS=freeCodeCamp/freeCodeCamp,docker/docker
+        - REPOS=freeCodeCamp/freeCodeCamp, docker/docker
         - GITHUB_TOKEN=<GitHub API Token see README>
       networks:
         - back-tier
