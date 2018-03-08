@@ -45,15 +45,12 @@ The Grafana Dashboard is now accessible via: `http://<Host IP Address>:3000` for
 username - admin
 password - foobar (Password is stored in the `config.monitoring` env file)
 
-## Post Configuration
-Now we need to create the Prometheus Datasource in order to connect Grafana to Prometheues 
-* Click the `Grafana` Menu at the top left corner (looks like a fireball)
-* Click `Data Sources`
-* Click the green button `Add Data Source`.
+The DataSource and Dashboard for Grafana are automatically provisioned. You can still install the dashboaed manually if you choose below.
+
 
 <center><img src="https://github.com/vegasbrianc/github-monitoring/blob/master/images/Grafana_Add_Data_Source.png" width="400" heighth="400"></center>
 
-## Install Dashboard
+## Manual Install Dashboard
 I created a Dashboard template which is available on [GitHub Stats Dashboard](https://grafana.net/dashboards/1559). Simply download the dashboard and select from the Grafana menu -> Dashboards -> Import
 
 This dashboard is intended to help you get started with graphing your GitHub Repos. If you have any changes you would like to see in the Dashboard let me know so I can update Grafana site as well.
