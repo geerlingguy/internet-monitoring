@@ -1,7 +1,7 @@
 {
   "__inputs": [
     {
-      "name": "DS_PROMETHEUS",
+      "name": "prometheus",
       "label": "Prometheus",
       "description": "Standard Prometheus datasource",
       "type": "datasource",
@@ -85,7 +85,7 @@
             "stars": "#1F78C1"
           },
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "prometheus",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -169,7 +169,7 @@
             "Open Issues": "#C15C17"
           },
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "prometheus",
           "editable": true,
           "error": false,
           "fill": 4,
@@ -248,7 +248,7 @@
             "Forks": "#F9BA8F"
           },
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "prometheus",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -339,7 +339,7 @@
             "stars": "#E5A8E2"
           },
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "prometheus",
           "decimals": 3,
           "editable": true,
           "error": false,
@@ -426,7 +426,7 @@
             "Open Issues": "#BF1B00"
           },
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "prometheus",
           "editable": true,
           "error": false,
           "fill": 3,
@@ -505,7 +505,7 @@
             "Forks": "#F9BA8F"
           },
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "prometheus",
           "decimals": 3,
           "editable": true,
           "error": false,
