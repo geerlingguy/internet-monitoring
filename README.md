@@ -45,7 +45,7 @@ The Grafana Dashboard is now accessible via: `http://<Host IP Address>:3000` for
 username - admin
 password - foobar (Password is stored in the `config.monitoring` env file)
 
-The DataSource and Dashboard for Grafana are automatically provisioned. You can still install the dashboaed manually if you choose below.
+The DataSource and Dashboard for Grafana are automatically provisioned. You can still install the dashboard manually if you choose below.
 
 
 <center><img src="https://github.com/vegasbrianc/github-monitoring/blob/master/images/Grafana_Add_Data_Source.png" width="400" heighth="400"></center>
