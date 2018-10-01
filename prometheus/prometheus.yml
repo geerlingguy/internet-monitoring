@@ -41,11 +41,9 @@ scrape_configs:
     scrape_interval: 5s
     params:
       module: [http_2xx]  # Look for a HTTP 200 response.
-    static_configs:
-      - targets:
-        - http://google.com    # Target to probe with http.
-        - https://blackdata.xam.dk:5001   # Target to probe with https.
-        - http://doesnotexistreally.com # Target to probe with http on port 8080.
+    file_sd_configs:
+      - files:
+        - pinghosts.yaml
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
