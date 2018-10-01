@@ -28,10 +28,28 @@ scrape_configs:
          - targets: ['localhost:9090']
 
 
-  - job_name: 'metrics'
-
-    # Override the global default and scrape targets from this job every 5 seconds.
-    scrape_interval: 5s
-
+  - job_name: 'speedtest'
+    metrics_path: /metrics
+    scrape_interval: 5m
+    scrape_timeout: 60s # running speedtest needs time to complete
+    
     static_configs:
-         - targets: ['metrics:9171']
+      - targets: ['speedtest:9696']
+
+  - job_name: 'blackbox'
+    metrics_path: /probe
+    scrape_interval: 5s
+    params:
+      module: [http_2xx]  # Look for a HTTP 200 response.
+    static_configs:
+      - targets:
+        - http://google.com    # Target to probe with http.
+        - https://blackdata.xam.dk:5001   # Target to probe with https.
+        - http://doesnotexistreally.com # Target to probe with http on port 8080.
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: metrics:9115  # The blackbox exporter's real hostname:port.
