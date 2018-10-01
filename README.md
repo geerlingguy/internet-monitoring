@@ -22,27 +22,20 @@ Once configurations are done let's start it up. From the /prometheus project dir
 
 That's it. docker-compose builds the entire Grafana and Prometheus stack automagically. 
 
-The Grafana Dashboard is now accessible via: `http://<Host IP Address>:3030` for example http://localhost:3000
+The Grafana Dashboard is now accessible via: `http://<Host IP Address>:3030` for example http://localhost:3030
 
 username - admin
-password - foobar (Password is stored in the `config.monitoring` env file)
+password - wonka (Password is stored in the `config.monitoring` env file)
 
-The DataSource and Dashboard for Grafana are automatically provisioned. You can still install the dashboard manually if you choose below.
+The DataSource and Dashboard for Grafana are automatically provisioned. 
 
-<center><img src="https://github.com/vegasbrianc/github-monitoring/blob/master/images/Grafana_Add_Data_Source.png" width="400" heighth="400"></center>
+If all works it should be available at http://localhost:3030/d/o9mIe_Aik/internet-connection - if no data shows up try change the timeduration to something smaller.
 
-## Manual Install Dashboard
-I created a Dashboard template which is available on [GitHub Stats Dashboard](https://grafana.net/dashboards/1559). Simply download the dashboard and select from the Grafana menu -> Dashboards -> Import
-
-This dashboard is intended to help you get started with graphing your GitHub Repos. If you have any changes you would like to see in the Dashboard let me know so I can update Grafana site as well.
-
-
-<center><img src="https://github.com/vegasbrianc/github-monitoring/blob/master/images/dashboard.png" width="4600" heighth="500"></center>
-
-## Troubleshooting
-It appears some people have reported no data appearing in Grafana. If this is happening to you be sure to check the time range being queried within Grafana to ensure it is using Today's date with current time.
+<center><img src="images/dashboard.png" width="4600" heighth="500"></center>
 
 ## Interesting urls
+
+Note: replace `localhost` with your docker host ip/name if not running this locally.
 
 http://localhost:9090/targets shows status of monitored targets as seen from prometheus - in this case which hosts being pinged and speedtest. note: speedtest will take a while before it shows as UP as it takes ~30s to respond.
 
