@@ -22,26 +22,27 @@ services:
     ports:
       - 9090:9090
     links:
-      - metrics:metrics
+      - ping:ping
+      - speedtest:speedtest
     networks:
       - back-tier
 
   grafana:
     image: grafana/grafana
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning/:/etc/grafana/provisioning/
     depends_on:
       - prometheus
     ports:
       - 3000:3000
-    volumes:
-      - grafana_data:/var/lib/grafana
-      - ./grafana/provisioning/:/etc/grafana/provisioning/
     env_file:
       - ./grafana/config.monitoring
     networks:
       - back-tier
       - front-tier
  
-  metrics:
+  ping:
     tty: true
     stdin_open: true
     expose:
@@ -49,6 +50,10 @@ services:
     ports:
       - 9115:9115
     image: prom/blackbox-exporter
+    volumes:
+      - ./blackbox/config:/config
+    command:
+      - '--config.file=/config/blackbox.yml'
     networks:
       - back-tier
 

@@ -36,7 +36,7 @@ scrape_configs:
     static_configs:
       - targets: ['speedtest:9696']
 
-  - job_name: 'blackbox'
+  - job_name: 'ping'
     metrics_path: /probe
     scrape_interval: 5s
     params:
@@ -52,4 +52,4 @@ scrape_configs:
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: metrics:9115  # The blackbox exporter's real hostname:port.
+        replacement: ping:9115  # The blackbox exporter's real hostname:port.
