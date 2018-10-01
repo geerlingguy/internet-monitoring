@@ -1,6 +1,6 @@
-- targets:
-    - http://google.com    # Target to probe with http.
+- targets: 
+    - http://google.com    
     - http://github.com
-    - https://blackdata.xam.dk:5001   # Target to probe with https.
-    - http://orbilogin.com
-    - http://192.168.1.103
+    - https://blackdata.xam.dk:5001
+    - http://192.168.1.1
+    - http://192.168.1.42

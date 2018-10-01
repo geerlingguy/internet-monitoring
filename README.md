@@ -56,6 +56,11 @@ http://localhost:9090/graph?g0.expr=probe_http_status_code&g0.tab=1 shows promet
 
 http://localhost:9115 blackbox exporter endpoint. Lets you see what have failed/succeded.
 
-http://localhost:9696/metrics speedtest exporter endpoint. Does take ~30 seconds to shohw its result as it runs an actual speedtest when requested.
+http://localhost:9696/metrics speedtest exporter endpoint. Does take ~30 seconds to show its result as it runs an actual speedtest when requested.
 
+## Thanks and a disclaimer
+
+Thanks to @vegasbrianc work on making a [super easy docker](https://github.com/vegasbrianc/github-monitoring) stack for running prometheus and grafana.
+
+I also want to disclaim that Prometheus aren't really (currently) intended for this kind of blackbox/external monitoring and this setup is not in anyway secured. Thus only use this for inspiration and do not blame me if someone hacks this and figure out what your real internet sped is :)
 
