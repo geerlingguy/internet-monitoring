@@ -22,7 +22,7 @@ Once configurations are done let's start it up. From the /prometheus project dir
 
 That's it. docker-compose builds the entire Grafana and Prometheus stack automagically. 
 
-The Grafana Dashboard is now accessible via: `http://<Host IP Address>:3000` for example http://192.168.10.1:3000
+The Grafana Dashboard is now accessible via: `http://<Host IP Address>:3030` for example http://localhost:3000
 
 username - admin
 password - foobar (Password is stored in the `config.monitoring` env file)

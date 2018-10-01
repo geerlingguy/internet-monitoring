@@ -35,7 +35,7 @@ services:
     depends_on:
       - prometheus
     ports:
-      - 3000:3000
+      - 3030:3000
     env_file:
       - ./grafana/config.monitoring
     networks:
