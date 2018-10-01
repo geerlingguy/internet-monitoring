@@ -3,12 +3,25 @@
 Here's a quick start to stand-up a Docker [Prometheus](http://prometheus.io/) stack containing Prometheus, Grafana with  [blackbox-exporter](https://github.com/prometheus/blackbox_exporter) and [speedtest-exporter](https://github.com/stefanwalther/speedtest-exporter) to collect and graph home network connections and speed.
 
 ## Pre-requisites
-Before we get started installing the Prometheus stack. Ensure you install the latest version of docker and [docker-compose](https://docs.docker.com/compose/install/) on your Docker host machine. This has also been tested with Docker for Mac and it works well.
+Before we get started installing the Prometheus stack. Ensure you install the latest version of docker and [docker-compose](https://docs.docker.com/compose/install/) on your Docker host machine. This has been tested with Docker for Mac and Synology and it works.
 
-## Installation
-Clone the project to your Docker host. 
+# Quick Start
 
-If you would like to change which targets should be monitored or make configuration changes edit the [/prometheus/prometheus.yml](./prometheus/prometheus.yml) file. The targets section is where you define what should be monitored by Prometheus. The names defined in this file are actually sourced from the service name in the docker-compose file. If you wish to change names of the services you can add the "container_name" parameter in the `docker-compose.yml` file. 
+If on Mac run this:
+
+```
+git clone https://github.com/maxandersen/internet-monitoring && cd internet-monitoring/prometheus && docker-compose up && open http://localhost:3030/d/o9mIe_Aik/internet-connection
+```
+
+otherwise:
+
+```
+git clone https://github.com/maxandersen/internet-monitoring
+cd internet-monitoring/prometheus
+docker-compose up
+```
+
+Goto [http://localhost:3030/d/o9mIe_Aik/internet-connection](http://localhost:3030/d/o9mIe_Aik/internet-connection) (change `localhost` to your docker host ip/name).
 
 ## Configuration
 To change what hosts you ping you change the `targets` section in [/prometheus/pinghosts.yml](./prometheus/pinghosts.yml) file.
