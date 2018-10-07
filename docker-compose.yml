@@ -69,6 +69,16 @@ services:
     networks:
       - back-tier
 
+  sonos:
+    tty: true
+    stdin_open: true
+    expose: 
+      - 1915
+    ports:
+      - 1915:1915
+    image: maxandersen/sonos_exporter
+    network_mode: host
+
   nodeexp:
     privileged: true
     image: prom/node-exporter
