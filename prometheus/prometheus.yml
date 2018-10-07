@@ -51,3 +51,7 @@ scrape_configs:
         target_label: instance
       - target_label: __address__
         replacement: ping:9115  # The blackbox exporter's real hostname:port.
+
+  - job_name: 'nodeexp'
+    static_configs:
+    - targets: ['nodeexp:9100']
