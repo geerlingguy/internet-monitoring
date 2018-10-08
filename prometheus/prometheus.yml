@@ -58,5 +58,5 @@ scrape_configs:
 
   - job_name: 'sonos'
     static_configs:
-    - targets: ['localhost:1915']
+    - targets: ['192.168.1.42:1915']
     
