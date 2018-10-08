@@ -78,7 +78,7 @@ services:
       - 1915:1915
     image: maxandersen/sonos_exporter
     command:
-      - '--address 0.0.0.0:1915'
+      - '--address=0.0.0.0:1915'
     network_mode: host
 
   nodeexp:
