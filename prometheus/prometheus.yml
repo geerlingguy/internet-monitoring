@@ -80,4 +80,4 @@ scrape_configs:
     metrics_path: /api/prometheus
     scheme: https
     static_configs:
-      - targets: ['hassio.local:8123']
+      - targets: ['192.168.1.126:8123']
