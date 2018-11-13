@@ -74,3 +74,10 @@ scrape_configs:
     static_configs:
     - targets: ['192.168.1.42:1915']
     
+
+  - job_name: 'hassio'
+    scrape_interval: 60s
+    metrics_path: /api/prometheus
+    scheme: https
+    static_configs:
+      - targets: ['hassio.local:8123']

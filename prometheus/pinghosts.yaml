@@ -4,5 +4,11 @@
     - https://blackdata.xam.dk:5001;blackdata.xam.dk;external;internetbox
     - http://192.168.1.1;internetbox;local;internetbox
     - http://192.168.1.42;blackdata;local;orbirouter-attic
-    - http://192.168.1.101;orbirouter;local;orbirouter
+    - http://192.168.1.103;orbi.router;local;orbirouter
+    - http://192.168.1.250;orbi-attic;local;orbirouter
+    - http://192.168.1.103;orbi.sat.basement;local;orbirouter
+    - http://192.168.1.121;orbi.sat.tv;local;orbirouter
+    - http://192.168.1.127:1400/status;sonosbedroom;local;orbi-attic
+    - http://192.168.1.126;hassio;orbirouter-tv
+
 
