@@ -80,6 +80,7 @@ scrape_configs:
     metrics_path: /api/prometheus
     scheme: https
     tls_config:
-        insecure_skip_verify: false
+        server_name: "andersens.duckdata.org"
+        insecure_skip_verify: true
     static_configs:
       - targets: ['192.168.1.126:8123']
