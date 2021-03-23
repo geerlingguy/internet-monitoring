@@ -61,9 +61,9 @@ services:
     tty: true
     stdin_open: true
     expose:
-      - 9800
+      - 9798
     ports:
-      - 9800:9800
+      - 9798:9798
     image: miguelndecarvalho/speedtest-exporter
     restart: always
     networks:
