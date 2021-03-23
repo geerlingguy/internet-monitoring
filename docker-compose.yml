@@ -41,7 +41,7 @@ services:
     networks:
       - back-tier
       - front-tier
- 
+
   ping:
     tty: true
     stdin_open: true
@@ -69,18 +69,6 @@ services:
     networks:
       - back-tier
 
-  sonos:
-    tty: true
-    stdin_open: true
-    expose: 
-      - 1915
-    ports:
-      - 1915:1915
-    image: maxandersen/sonos_exporter
-    command:
-      - '--address=0.0.0.0:1915'
-    network_mode: host
-
   nodeexp:
     privileged: true
     image: prom/node-exporter
@@ -98,4 +86,3 @@ services:
       - "^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)"
     networks:
       - back-tier
-
