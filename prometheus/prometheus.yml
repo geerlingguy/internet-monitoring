@@ -33,7 +33,7 @@ scrape_configs:
     scrape_interval: 15m
     scrape_timeout: 60s # running speedtest needs time to complete
     static_configs:
-      - targets: ['speedtest:9696']
+      - targets: ['speedtest:9800']
 
   - job_name: 'ping'
     metrics_path: /probe
