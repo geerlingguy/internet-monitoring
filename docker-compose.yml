@@ -11,6 +11,7 @@ networks:
 services:
   prometheus:
     image: prom/prometheus:v2.25.2
+    restart: always
     volumes:
       - ./prometheus/:/etc/prometheus/
       - prometheus_data:/prometheus
@@ -29,6 +30,7 @@ services:
 
   grafana:
     image: grafana/grafana
+    restart: always
     volumes:
       - grafana_data:/var/lib/grafana
       - ./grafana/provisioning/:/etc/grafana/provisioning/
@@ -50,6 +52,7 @@ services:
     ports:
       - 9115:9115
     image: prom/blackbox-exporter
+    restart: always
     volumes:
       - ./blackbox/config:/config
     command:
