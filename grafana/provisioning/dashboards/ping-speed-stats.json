@@ -234,7 +234,7 @@
           "refId": "A"
         }
       ],
-      "title": "speedtest ping",
+      "title": "Speedtest Ping",
       "type": "gauge"
     },
     {
@@ -307,7 +307,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "speedtest",
+      "title": "Speedtest Graph",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -357,6 +357,8 @@
         "colorScheme": "interpolateGnYlRd",
         "defaultColor": "#757575",
         "exponent": 0.5,
+        "max": 1,
+        "min": 0,
         "mode": "spectrum",
         "thresholds": []
       },
@@ -395,7 +397,7 @@
           "refId": "A"
         }
       ],
-      "title": "Panel Title",
+      "title": "Uptime",
       "tooltip": {
         "extraInfo": "",
         "freezeOnClick": true,
@@ -485,7 +487,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "http duration",
+      "title": "HTTP Request Duration",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -523,6 +525,7 @@
       }
     }
   ],
+  "refresh": "5m",
   "schemaVersion": 27,
   "style": "dark",
   "tags": [
@@ -533,7 +536,7 @@
     "list": []
   },
   "time": {
-    "from": "now-30m",
+    "from": "now-24h",
     "to": "now"
   },
   "timepicker": {
@@ -562,7 +565,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "internet connection",
+  "title": "Internet connection",
   "uid": "o9mIe_Aik",
   "version": 1
 }
