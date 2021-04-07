@@ -249,7 +249,7 @@
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
-            "fillOpacity": 10,
+            "fillOpacity": 50,
             "gradientMode": "none",
             "hideFrom": {
               "graph": false,
@@ -257,7 +257,7 @@
               "tooltip": false
             },
             "lineInterpolation": "linear",
-            "lineWidth": 1,
+            "lineWidth": 0,
             "pointSize": 5,
             "scaleDistribution": {
               "type": "linear"
@@ -296,10 +296,10 @@
         "legend": {
           "calcs": [],
           "displayMode": "list",
-          "placement": "bottom"
+          "placement": "right"
         },
         "tooltipOptions": {
-          "mode": "single"
+          "mode": "multi"
         }
       },
       "pluginVersion": "7.4.5",
@@ -310,14 +310,14 @@
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "",
+          "legendFormat": "Download",
           "refId": "A"
         },
         {
           "expr": "speedtest_upload_bits_per_second{}",
           "hide": false,
           "interval": "",
-          "legendFormat": "",
+          "legendFormat": "Upload",
           "refId": "B"
         }
       ],
