@@ -341,8 +341,21 @@
         "exponent": 0.5,
         "max": 1,
         "min": 0,
-        "mode": "spectrum",
-        "thresholds": []
+        "mode": "discrete",
+        "thresholds": [
+          {
+            "$$hashKey": "object:68",
+            "color": "#37872D",
+            "tooltip": "Up",
+            "value": "1"
+          },
+          {
+            "$$hashKey": "object:72",
+            "color": "#C4162A",
+            "tooltip": "Down",
+            "value": "0"
+          }
+        ]
       },
       "datasource": "prometheus",
       "fieldConfig": {
@@ -549,5 +562,5 @@
   "timezone": "browser",
   "title": "Internet connection",
   "uid": "o9mIe_Aik",
-  "version": 1
+  "version": 2
 }
