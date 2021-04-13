@@ -1,22 +1,22 @@
-# A Docker Stack which Monitors your home network
+# Internet Monitoring Docker Stack with Prometheus + Grafana
 
 > This repository is a fork from [maxandersen/internet-monitoring](https://github.com/maxandersen/internet-monitoring), tailored for use on a Raspberry Pi. It has only been tested on a Raspberry Pi 4 running Pi OS 64-bit beta.
 
-Here's a quick start to stand-up a Docker [Prometheus](http://prometheus.io/) stack containing Prometheus, Grafana with  [blackbox-exporter](https://github.com/prometheus/blackbox_exporter) and [speedtest-exporter](https://github.com/stefanwalther/speedtest-exporter) to collect and graph home network connections and speed.
+Stand-up a Docker [Prometheus](http://prometheus.io/) stack containing Prometheus, Grafana with [blackbox-exporter](https://github.com/prometheus/blackbox_exporter), and [speedtest-exporter](https://github.com/MiguelNdeCarvalho/speedtest-exporter) to collect and graph home Internet reliability and throughput.
 
 ## Pre-requisites
 
-Before we get started installing the Prometheus stack. Ensure you install the latest version of docker and [docker-compose](https://docs.docker.com/compose/install/) on your Docker host machine. This has been tested with Docker for Mac and Synology and it works.
+Make sure Docker and [Docker Compose](https://docs.docker.com/compose/install/) are installed on your Docker host machine.
 
-# Quick Start
+## Quick Start
 
 ```
 git clone https://github.com/geerlingguy/internet-monitoring
 cd internet-monitoring
-docker-compose up
+docker-compose up -d
 ```
 
-Goto [http://localhost:3030/d/o9mIe_Aik/internet-connection](http://localhost:3030/d/o9mIe_Aik/internet-connection) (change `localhost` to your docker host ip/name).
+Go to [http://localhost:3030/d/o9mIe_Aik/internet-connection](http://localhost:3030/d/o9mIe_Aik/internet-connection) (change `localhost` to your docker host ip/name).
 
 ## Configuration
 
@@ -24,7 +24,7 @@ To change what hosts you ping you change the `targets` section in [/prometheus/p
 
 For speedtest the only relevant configuration is how often you want the check to happen. It is at 30 minutes by default which might be too much if you have limit on downloads. This is changed by editing `scrape_interval` under `speedtest` in [/prometheus/prometheus.yml](./prometheus/prometheus.yml).
 
-Once configurations are done let's start it up. From the /prometheus project directory run the following command:
+Once configurations are done, run the following command:
 
     $ docker-compose up -d
 
@@ -43,8 +43,6 @@ If all works it should be available at http://localhost:3030/d/o9mIe_Aik/interne
 
 ## Interesting urls
 
-Note: replace `localhost` with your docker host ip/name if not running this locally.
-
 http://localhost:9090/targets shows status of monitored targets as seen from prometheus - in this case which hosts being pinged and speedtest. note: speedtest will take a while before it shows as UP as it takes about 30s to respond.
 
 http://localhost:9090/graph?g0.expr=probe_http_status_code&g0.tab=1 shows prometheus value for `probe_http_status_code` for each host. You can edit/play with additional values. Useful to check everything is okey in prometheus (in case Grafana is not showing the data you expect).
@@ -55,6 +53,8 @@ http://localhost:9798/metrics speedtest exporter endpoint. Does take about 30 se
 
 ## Thanks and a disclaimer
 
+Thanks to @maxandersen for making the original project this fork is based on.
+
 Thanks to @vegasbrianc work on making a [super easy docker](https://github.com/vegasbrianc/github-monitoring) stack for running prometheus and grafana.
 
-I also want to disclaim that Prometheus aren't really (currently) intended for this kind of blackbox/external monitoring and this setup is not in anyway secured. Thus only use this for inspiration and do not blame me if someone hacks this and figure out what your real internet speed is :)
+This setup is not secured in any way, so please only use on non-public networks, or find a way to secure it on your own.
