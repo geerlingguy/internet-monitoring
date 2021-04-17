@@ -1,32 +1,19 @@
-# my global config
 global:
   scrape_interval:     15s # By default, scrape targets every 15 seconds.
   evaluation_interval: 15s # By default, scrape targets every 15 seconds.
   # scrape_timeout is set to the global default (10s).
-
-  # Attach these labels to any time series or alerts when communicating with
-  # external systems (federation, remote storage, Alertmanager).
   external_labels:
       monitor: 'Alertmanager'
 
 # Load and evaluate rules in this file every 'evaluation_interval' seconds.
 rule_files:
     - 'alert.rules'
-  # - "first.rules"
-  # - "second.rules"
 
-# A scrape configuration containing exactly one endpoint to scrape:
-# Here it's Prometheus itself.
 scrape_configs:
-
   - job_name: 'prometheus'
-
-    # Override the global default and scrape targets from this job every 5 seconds.
     scrape_interval: 5s
-
     static_configs:
          - targets: ['localhost:9090']
-
 
   - job_name: 'speedtest'
     metrics_path: /metrics
@@ -34,6 +21,16 @@ scrape_configs:
     scrape_timeout: 60s # running speedtest needs time to complete
     static_configs:
       - targets: ['speedtest:9798']
+
+  # This job config only works with my internet-pi configuration currently,
+  # if you also have the shelly plug enabled there. It will just error out
+  # by default if you don't have a Shelly Plug on your network. Someday I'll
+  # work on making this more configurable...
+  - job_name: 'shelly-plug'
+    metrics_path: /metrics
+    scrape_interval: 1m
+    static_configs:
+      - targets: ['172.17.0.1:9924']
 
   - job_name: 'ping'
     metrics_path: /probe
