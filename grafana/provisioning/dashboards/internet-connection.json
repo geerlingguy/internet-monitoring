@@ -63,7 +63,7 @@
       "id": 8,
       "interval": null,
       "links": [],
-      "maxDataPoints": 100,
+      "maxDataPoints": 1000,
       "options": {
         "orientation": "horizontal",
         "reduceOptions": {
@@ -135,7 +135,7 @@
       "id": 10,
       "interval": null,
       "links": [],
-      "maxDataPoints": 100,
+      "maxDataPoints": 1000,
       "options": {
         "orientation": "horizontal",
         "reduceOptions": {
@@ -208,7 +208,7 @@
       "id": 12,
       "interval": null,
       "links": [],
-      "maxDataPoints": 100,
+      "maxDataPoints": 1000,
       "options": {
         "orientation": "horizontal",
         "reduceOptions": {
@@ -562,5 +562,5 @@
   "timezone": "browser",
   "title": "Internet connection",
   "uid": "o9mIe_Aik",
-  "version": 2
+  "version": 1
 }
