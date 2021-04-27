@@ -53,7 +53,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "unit": "short"
@@ -165,7 +165,7 @@
       }
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -233,7 +233,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -322,7 +322,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -395,7 +395,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -471,7 +471,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -547,7 +547,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "description": "",
       "fieldConfig": {
         "defaults": {},
@@ -710,7 +710,7 @@
       "type": "ae3e-plotly-panel"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -787,7 +787,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -864,7 +864,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -940,7 +940,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1020,7 +1020,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -1139,7 +1139,7 @@
       }
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1215,7 +1215,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1295,7 +1295,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "unit": "short"
@@ -1393,7 +1393,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "unit": "short"
@@ -1487,7 +1487,7 @@
       }
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -1514,7 +1514,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -1629,7 +1629,7 @@
       }
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1687,7 +1687,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1744,7 +1744,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1805,7 +1805,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -1864,7 +1864,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "Prometheus Scrape Duration",
+      "title": "prometheus Scrape Duration",
       "tooltip": {
         "shared": true,
         "sort": 0,
