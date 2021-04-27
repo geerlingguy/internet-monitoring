@@ -104,7 +104,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_uplink_throughput_bytes / 1000000",
           "instant": false,
           "interval": "",
@@ -112,7 +112,7 @@
           "refId": "A"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_downlink_throughput_bytes /1000000",
           "hide": false,
           "interval": "",
@@ -222,7 +222,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_snr",
           "interval": "",
           "legendFormat": "",
@@ -311,7 +311,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_state",
           "interval": "",
           "legendFormat": "",
@@ -381,7 +381,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_last_24h_obstructed_seconds",
           "format": "time_series",
           "interval": "",
@@ -460,7 +460,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_alert_slow_eth_speeds",
           "interval": "",
           "legendFormat": "",
@@ -536,7 +536,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_alert_unexpected_location",
           "interval": "",
           "legendFormat": "",
@@ -599,7 +599,7 @@
       "pluginVersion": "7.4.5",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"0\"}",
           "instant": true,
           "interval": "",
@@ -607,7 +607,7 @@
           "refId": "A"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"1\"}",
           "hide": false,
           "instant": true,
@@ -616,7 +616,7 @@
           "refId": "B"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"2\"}",
           "hide": false,
           "instant": true,
@@ -625,7 +625,7 @@
           "refId": "C"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"3\"}",
           "hide": false,
           "instant": true,
@@ -634,7 +634,7 @@
           "refId": "D"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"4\"}",
           "hide": false,
           "instant": true,
@@ -643,7 +643,7 @@
           "refId": "E"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"5\"}",
           "hide": false,
           "instant": true,
@@ -652,7 +652,7 @@
           "refId": "F"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"6\"}",
           "hide": false,
           "instant": true,
@@ -661,7 +661,7 @@
           "refId": "G"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"7\"}",
           "hide": false,
           "instant": true,
@@ -670,7 +670,7 @@
           "refId": "H"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"8\"}",
           "hide": false,
           "instant": true,
@@ -679,7 +679,7 @@
           "refId": "I"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"9\"}",
           "hide": false,
           "instant": true,
@@ -688,7 +688,7 @@
           "refId": "J"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"10\"}",
           "hide": false,
           "instant": true,
@@ -697,7 +697,7 @@
           "refId": "K"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio{wedge=\"11\"}",
           "hide": false,
           "instant": true,
@@ -776,7 +776,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_currently_obstructed",
           "interval": "",
           "legendFormat": "",
@@ -929,7 +929,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_alert_mast_not_near_vertical",
           "interval": "",
           "legendFormat": "",
@@ -1005,7 +1005,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_alert_thermal_throttle",
           "interval": "",
           "legendFormat": "",
@@ -1080,14 +1080,14 @@
       "steppedLine": false,
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_pop_ping_latency_seconds",
           "interval": "",
           "legendFormat": "Latency",
           "refId": "A"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_pop_ping_drop_ratio",
           "hide": false,
           "interval": "",
@@ -1204,7 +1204,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_alert_motors_stuck",
           "interval": "",
           "legendFormat": "",
@@ -1280,7 +1280,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_alert_thermal_shutdown",
           "interval": "",
           "legendFormat": "",
@@ -1338,7 +1338,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_wedge_fraction_obstruction_ratio * 100 > 0 ",
           "interval": "",
           "legendFormat": "{{wedge}}",
@@ -1436,7 +1436,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_first_nonempty_slot_seconds",
           "interval": "",
           "legendFormat": "",
@@ -1569,14 +1569,14 @@
       "steppedLine": false,
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_snr",
           "interval": "",
           "legendFormat": "SNR",
           "refId": "A"
         },
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "starlink_dish_currently_obstructed",
           "hide": false,
           "interval": "",
@@ -1675,7 +1675,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "max(max_over_time(speedTest_download_speed_Bps[1d:5m]))",
           "interval": "",
           "legendFormat": "",
@@ -1733,7 +1733,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "max(max_over_time(speedTest_upload_speed_Bps[1d:5m]))",
           "interval": "",
           "legendFormat": "",
@@ -1790,7 +1790,7 @@
       "pluginVersion": "7.5.4",
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "min(min_over_time(speedTest_latency_seconds[1d:5m]))",
           "interval": "",
           "legendFormat": "",
@@ -1853,7 +1853,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "exemplar": true,
+          "exemplar": false,
           "expr": "scrape_duration_seconds",
           "interval": "",
           "legendFormat": "{{ job }}",
