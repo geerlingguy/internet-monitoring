@@ -205,7 +205,7 @@
       "id": 12,
       "interval": null,
       "links": [],
-      "maxDataPoints": 1000,
+      "maxDataPoints": 50000,
       "options": {
         "orientation": "horizontal",
         "reduceOptions": {
