@@ -27,7 +27,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "custom": {},
           "mappings": [
             {
               "id": 0,
@@ -63,7 +62,7 @@
       "id": 8,
       "interval": null,
       "links": [],
-      "maxDataPoints": 1000,
+      "maxDataPoints": 50000,
       "options": {
         "orientation": "horizontal",
         "reduceOptions": {
@@ -77,7 +76,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "7.4.5",
+      "pluginVersion": "7.5.6",
       "targets": [
         {
           "expr": "speedtest_download_bits_per_second{}",
@@ -99,7 +98,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "custom": {},
           "mappings": [
             {
               "id": 0,
@@ -135,7 +133,7 @@
       "id": 10,
       "interval": null,
       "links": [],
-      "maxDataPoints": 1000,
+      "maxDataPoints": 50000,
       "options": {
         "orientation": "horizontal",
         "reduceOptions": {
@@ -149,7 +147,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "7.4.5",
+      "pluginVersion": "7.5.6",
       "targets": [
         {
           "expr": "speedtest_upload_bits_per_second{}",
@@ -171,7 +169,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "custom": {},
           "decimals": 2,
           "mappings": [
             {
@@ -208,7 +205,7 @@
       "id": 12,
       "interval": null,
       "links": [],
-      "maxDataPoints": 1000,
+      "maxDataPoints": 50000,
       "options": {
         "orientation": "horizontal",
         "reduceOptions": {
@@ -222,7 +219,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "7.4.5",
+      "pluginVersion": "7.5.6",
       "targets": [
         {
           "expr": "speedtest_ping_latency_milliseconds",
@@ -291,6 +288,7 @@
       },
       "id": 6,
       "links": [],
+      "maxDataPoints": 50000,
       "options": {
         "graph": {},
         "legend": {
@@ -359,9 +357,7 @@
       },
       "datasource": "prometheus",
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "gridPos": {
@@ -426,9 +422,7 @@
       "dashes": false,
       "datasource": "prometheus",
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "fill": 1,
@@ -459,7 +453,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.5",
+      "pluginVersion": "7.5.6",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -531,7 +525,7 @@
     "list": []
   },
   "time": {
-    "from": "now-24h",
+    "from": "now-7d",
     "to": "now"
   },
   "timepicker": {
@@ -562,5 +556,5 @@
   "timezone": "browser",
   "title": "Internet connection",
   "uid": "o9mIe_Aik",
-  "version": 1
+  "version": 12
 }
