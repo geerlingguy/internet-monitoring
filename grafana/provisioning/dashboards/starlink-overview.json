@@ -56,6 +56,7 @@
       "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
+          "custom": {},
           "unit": "short"
         },
         "overrides": []
@@ -88,7 +89,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -171,6 +172,7 @@
           "color": {
             "mode": "thresholds"
           },
+          "custom": {},
           "mappings": [],
           "max": 9,
           "min": 0,
@@ -219,7 +221,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
@@ -240,6 +242,7 @@
             "fixedColor": "rgb(245, 245, 245)",
             "mode": "fixed"
           },
+          "custom": {},
           "mappings": [
             {
               "from": "",
@@ -308,7 +311,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
@@ -329,6 +332,7 @@
           "color": {
             "mode": "thresholds"
           },
+          "custom": {},
           "mappings": [],
           "min": 0,
           "thresholds": {
@@ -378,7 +382,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
@@ -401,6 +405,7 @@
           "color": {
             "mode": "thresholds"
           },
+          "custom": {},
           "mappings": [
             {
               "from": "",
@@ -457,7 +462,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
@@ -477,6 +482,7 @@
           "color": {
             "mode": "thresholds"
           },
+          "custom": {},
           "mappings": [
             {
               "from": "",
@@ -533,7 +539,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
@@ -550,7 +556,9 @@
       "datasource": "prometheus",
       "description": "",
       "fieldConfig": {
-        "defaults": {},
+        "defaults": {
+          "custom": {}
+        },
         "overrides": []
       },
       "gridPos": {
@@ -716,6 +724,7 @@
           "color": {
             "mode": "thresholds"
           },
+          "custom": {},
           "mappings": [
             {
               "from": "",
@@ -773,7 +782,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
@@ -793,6 +802,7 @@
           "color": {
             "mode": "thresholds"
           },
+          "custom": {},
           "mappings": [
             {
               "from": "",
@@ -850,10 +860,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
-          "expr": "max(speedTest_running)",
+          "expr": "max(speedtest_up)",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -870,6 +880,7 @@
           "color": {
             "mode": "thresholds"
           },
+          "custom": {},
           "mappings": [
             {
               "from": "",
@@ -926,7 +937,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
@@ -946,6 +957,7 @@
           "color": {
             "mode": "thresholds"
           },
+          "custom": {},
           "mappings": [
             {
               "from": "",
@@ -1002,7 +1014,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
@@ -1022,7 +1034,9 @@
       "dashes": false,
       "datasource": "prometheus",
       "fieldConfig": {
-        "defaults": {},
+        "defaults": {
+          "custom": {}
+        },
         "overrides": []
       },
       "fill": 1,
@@ -1056,7 +1070,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1145,6 +1159,7 @@
           "color": {
             "mode": "thresholds"
           },
+          "custom": {},
           "mappings": [
             {
               "from": "",
@@ -1201,7 +1216,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
@@ -1221,6 +1236,7 @@
           "color": {
             "mode": "thresholds"
           },
+          "custom": {},
           "mappings": [
             {
               "from": "",
@@ -1277,7 +1293,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
@@ -1298,6 +1314,7 @@
       "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
+          "custom": {},
           "unit": "short"
         },
         "overrides": []
@@ -1328,7 +1345,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1396,6 +1413,7 @@
       "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
+          "custom": {},
           "unit": "short"
         },
         "overrides": []
@@ -1426,7 +1444,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1489,7 +1507,9 @@
     {
       "datasource": "prometheus",
       "fieldConfig": {
-        "defaults": {},
+        "defaults": {
+          "custom": {}
+        },
         "overrides": []
       },
       "gridPos": {
@@ -1503,7 +1523,7 @@
         "content": "\n         ",
         "mode": "markdown"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "timeFrom": null,
       "timeShift": null,
       "title": "Best Speedtest.net In Last 24 Hours",
@@ -1516,7 +1536,9 @@
       "dashes": false,
       "datasource": "prometheus",
       "fieldConfig": {
-        "defaults": {},
+        "defaults": {
+          "custom": {}
+        },
         "overrides": []
       },
       "fill": 0,
@@ -1550,7 +1572,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1636,6 +1658,7 @@
             "fixedColor": "yellow",
             "mode": "fixed"
           },
+          "custom": {},
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -1672,11 +1695,11 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
-          "expr": "max(max_over_time(speedTest_download_speed_Bps[1d:5m]))",
+          "expr": "max(max_over_time(speedtest_download_bits_per_second[1d:5m]))",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -1694,6 +1717,7 @@
             "fixedColor": "purple",
             "mode": "fixed"
           },
+          "custom": {},
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -1730,11 +1754,11 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
-          "expr": "max(max_over_time(speedTest_upload_speed_Bps[1d:5m]))",
+          "expr": "max(max_over_time(speedtest_upload_bits_per_second[1d:5m]))",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -1751,6 +1775,7 @@
             "fixedColor": "blue",
             "mode": "fixed"
           },
+          "custom": {},
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -1761,7 +1786,7 @@
               }
             ]
           },
-          "unit": "s"
+          "unit": "ms"
         },
         "overrides": []
       },
@@ -1787,11 +1812,11 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "targets": [
         {
           "exemplar": false,
-          "expr": "min(min_over_time(speedTest_latency_seconds[1d:5m]))",
+          "expr": "min(min_over_time(speedtest_ping_latency_milliseconds[1d:5m]))",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -1807,7 +1832,9 @@
       "dashes": false,
       "datasource": "prometheus",
       "fieldConfig": {
-        "defaults": {},
+        "defaults": {
+          "custom": {}
+        },
         "overrides": []
       },
       "fill": 1,
@@ -1837,7 +1864,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.4",
+      "pluginVersion": "7.4.5",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1929,5 +1956,5 @@
   "timezone": "",
   "title": "Starlink Overview",
   "uid": "GG3mnflGz",
-  "version": 1
+  "version": 3
 }
