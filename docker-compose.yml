@@ -63,11 +63,12 @@ services:
   speedtest:
     tty: true
     stdin_open: true
+    privileged: true
     expose:
       - 9798
     ports:
       - 9798:9798
-    image: miguelndecarvalho/speedtest-exporter
+    image: miguelndecarvalho/speedtest-exporter:v3.2.2
     restart: always
     networks:
       - back-tier
